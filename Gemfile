@@ -55,3 +55,4 @@ gem 'bootstrap-sass'
 gem 'devise'
 
 gem 'bootsnap'
+gem 'coffee-script'
