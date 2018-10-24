@@ -55,4 +55,5 @@ gem 'bootstrap-sass'
 gem 'devise'
 
 gem 'bootsnap'
+gem 'pundit'
 gem 'coffee-script'
