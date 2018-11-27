@@ -9,6 +9,7 @@ Bundler.require(*Rails.groups)
 module Blocipedia
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    #config.autoload_paths += %W(#{config.root}/lib)
     config.load_defaults 5.2
     #config.assets.enabled = true
 

@@ -50,9 +50,17 @@ group :development, :test do
    gem 'factory_bot_rails', '~> 4.0'
 end
 
+group :test do
+  gem 'database_cleaner'
+end
+
 gem 'bootstrap-sass'
 
 gem 'devise'
 
 gem 'bootsnap'
+gem 'pundit'
+gem 'faker'
+gem 'stripe'
+gem 'dotenv-rails', :groups => [:development, :test]
 gem 'coffee-script'

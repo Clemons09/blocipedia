@@ -1,0 +1,40 @@
+<div class="space">
+  <h1> This is the wiki index </h1>
+  <%= current_user.email %>
+  <br>
+  <p>The current time is: <%= Time.now %></p>
+  <% time = Time.now %>
+  <% if time < " 15:00:00 -0800" %>
+  O Hai
+  <%else%>
+  Go get the la
+  <%end%>
+  <br>
+  <%= user_signed_in? %>
+  <br>
+  <%= current_user.email %>
+  <br>
+  <%= current_user.role %>
+  <br>
+
+  <div class="col-md-8">
+  <% @wikis.each do |wiki| %>
+    <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading">
+          <%= link_to wiki.title, wiki %>
+        </h4>
+        <small>
+          <%= wiki.body %>
+        </small>
+        <p>•  <% if wiki.private %>
+            <small>private</small>
+            <% else %>
+            <small>public</small>
+            <% end %> </p>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+</div>
